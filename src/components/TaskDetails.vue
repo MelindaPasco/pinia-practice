@@ -1,5 +1,5 @@
 <template>
-    <div class="task">
+    <div class="task" :class="{isFav: task.isFav}">
         <h3>{{ task.title }}</h3>
         <div class="icons">
             <i 

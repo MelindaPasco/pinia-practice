@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800&family=VT323&display=swap');
 
 body {
-  background: #f2f2f2;
-  color: #444;
+  background: #313131;
+  color: #f2f2f2;
   margin: 0;
 }
 body * {
@@ -12,7 +12,7 @@ body * {
 /* header */
 header {
   text-align: center;
-  background: #e7e7e7;
+  background: #525252;
   padding: 10px 0;
   display: flex;
   justify-content: center;
@@ -27,7 +27,6 @@ header h1 {
   font-size: 2em;
   padding-top: 15px;
   margin-left: 15px;
-  color: #777;
 }
 
 /* task list */
@@ -37,13 +36,17 @@ header h1 {
 }
 .task {
   padding: 6px 20px;
-  background: #fff;
+  background: #525252;
   margin-top: 20px;
-  border-radius: 4px;
-  box-shadow: 2px 4px 6px rgba(0,0,0,0.05);
+  border: 2px solid;
+  border-image-source: linear-gradient(45deg, #ffd859, #63d675);
+  border-image-slice: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.task.isFav {
+  border-image-source: linear-gradient(45deg, #f32b7b, #a62cf2);
 }
 .task h3, .task .icons {
   display: inline-block;
@@ -55,10 +58,9 @@ header h1 {
   font-size: 1.4em;
   margin-left: 6px;
   cursor: pointer;
-  color: #bbb;
 }
 .task i.active {
-  color: #ff005d;
+  color: #f32b7b;
 }
 
 /* filter nav */
@@ -70,8 +72,9 @@ header h1 {
 .filter button {
   display: inline-block;
   margin-left: 10px;
-  background: #fff;
-  border: 2px solid #555;
+  color: #f2f2f2;
+  background: #525252;
+  border: none;
   border-radius: 4px;
   padding: 4px 8px;
   cursor: pointer;
@@ -81,7 +84,7 @@ header h1 {
 
 /* new task form */
 .new-task-form {
-  background: #e7e7e7;
+  background: #525252;
   padding: 20px 0;
 }
 form {
@@ -106,15 +109,4 @@ form input {
   border-radius: 6px;
   color: #555;
   font-size: 1em;
-}
-
-/* loading state */
-.loading {
-  max-width: 640px;
-  border: 1px solid #ffd859;
-  background: #ffe9a0;
-  color: #3a3a3a;
-  padding: 5px 0;
-  text-align: center;
-  margin: 30px auto;
 }
