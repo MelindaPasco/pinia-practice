@@ -1,6 +1,15 @@
 # pinia-practice
 
-This template should help get you started developing with Vue 3 in Vite.
+Project done with Vue 3 in Vite.  
+A little practice with the Pinia store in the form of a Task list (yes, again, one of those haha).  
+  
+Features :  
+- Add new tasks  
+- Delete existing ones  
+- Mark task as Favorite  
+- Filter to display Favorites only  
+  
+The data are not being persisted, as it was not really the goal of this porject.
 
 ## Recommended IDE Setup
 
